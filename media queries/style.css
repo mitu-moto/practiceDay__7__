@@ -1,0 +1,42 @@
+/* types: print, screen, all */
+/* how to write media */
+/* @media type{
+
+} */
+body{
+    color:black;
+}
+@media print{
+    body{
+        color:red;
+        background-color:gray;
+    }
+}
+
+
+
+@media screen and (orientation: portrait){
+    body::after {
+        content :"Portrait";
+    }
+    p{
+        display:none;
+    }
+}
+@media screen and (orientation: landscape){
+    body::after {
+        content :"Landscape";
+    }
+}
+
+@media (max-width: 500px) and (orientation:landscape){
+    body{
+        background: lightgreen;
+    }
+}
+
+@media (min-width:800px){
+    body{
+        background:rgb(122, 122, 187);
+    }
+}

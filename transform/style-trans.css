@@ -1,0 +1,18 @@
+body{
+    padding:16px;
+    background-color: black;
+}
+
+.box{
+    
+    width: 200px;
+    height: 200px;
+    margin:32px auto;
+    background-color:royalblue;
+}
+.box:hover{
+    /* transform: scale(2); */
+/* transform: skew(10deg,-90deg); */
+    /* translate: 50px 0; */
+    transform:sacle(2) translateY(50px);
+}
